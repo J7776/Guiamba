@@ -1,0 +1,82 @@
+/* Estilos do cabeçalho e campo de pesquisa */
+#search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos do menu */
+#navbar {
+    background-color: #333;
+    color: white;
+}
+
+#nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-list li {
+    padding: 14px 20px;
+}
+
+#nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav-list a:hover {
+    text-decoration: underline;
+}
+
+/* Menu responsivo */
+#menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 14px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #nav-list.active {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
+
